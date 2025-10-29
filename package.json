@@ -1,0 +1,44 @@
+{
+  "name": "@neptune3d/electron-ipc",
+  "version": "0.0.1",
+  "description": "Helpers for creating typed IPC APIs to easily send messages between main and renderer processes in Electron.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/neptune-3d/electron-ipc#readme",
+  "bugs": {
+    "url": "https://github.com/neptune-3d/electron-ipc/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neptune-3d/electron-ipc.git"
+  },
+  "author": "Dusan Jovanov <jovanovdusan1@gmail.com>",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/node": "^24.9.1",
+    "bumpp": "^10.3.1",
+    "prettier": "2.8",
+    "tsdown": "^0.15.9",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.1",
+    "electron": "^39.0.0"
+  },
+  "peerDependencies": {
+    "electron": "^39.0.0"
+  }
+}
