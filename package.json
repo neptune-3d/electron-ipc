@@ -2,6 +2,10 @@
   "name": "@neptune3d/electron-ipc",
   "version": "0.0.1",
   "description": "Helpers for creating typed IPC APIs to easily send messages between main and renderer processes in Electron.",
+  "keywords": [
+    "electron",
+    "ipc"
+  ],
   "type": "module",
   "license": "MIT",
   "homepage": "https://github.com/neptune-3d/electron-ipc#readme",
