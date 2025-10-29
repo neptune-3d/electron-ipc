@@ -101,7 +101,5 @@ ipc.renderer.fromMain({
 
 ## 🧠 Notes
 
-- `m_<key>` methods are used for renderer → main communication.
-- `r_<key>` methods are used to register renderer-side listeners for main → renderer events.
 - Two-way actions use `ipcRenderer.invoke()` and `ipcMain.handle()`.
 - One-way actions use `ipcRenderer.send()` and `ipcMain.on()` or `webContents.send()`.
