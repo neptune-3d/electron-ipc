@@ -129,7 +129,7 @@ export function createIpcApi<
         for (const key of Object.keys(toMain)) {
           if (toMain[key].type === "twoWay") {
             ipcMain.handle(key, (e: any, arg: any) => {
-              handlers[key](arg, e);
+              return handlers[key](arg, e);
             });
           }
           //
